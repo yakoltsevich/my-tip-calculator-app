@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import "src/styles/variables";
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: content-box;
+  background: $Light_grayish_cyan;
+
+  @include font-family_space_mono;
+  font-size: $desktop_1440_font_size;
+
+  & > svg {
+    transform: scale(2);
+    margin: 5% 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .App {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 50px 0;
+    font-size: $mobile_font_size;
+
+    & > svg {
+      transform: scale(1);
+      margin: 5% 0;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1920px) {
+  .App {
+    font-size: $desktop_1080_font_size;
+  }
+}
