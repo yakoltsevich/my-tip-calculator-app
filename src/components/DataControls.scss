@@ -1,0 +1,38 @@
+@import "src/styles/variables";
+
+.data-controls {
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  &__buttons-list {
+    height: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    button {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .data-controls {
+    width: 100%;
+    padding: 40px 10px;
+
+    &__buttons-list {
+      grid-template-columns: 1fr 1fr;
+      font-size: calc($mobile_font_size * 1.5);
+
+      button {
+        padding: 10px;
+      }
+    }
+  }
+}

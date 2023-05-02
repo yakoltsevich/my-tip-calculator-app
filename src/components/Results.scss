@@ -1,0 +1,55 @@
+@import "src/styles/variables";
+
+.results {
+  box-sizing: border-box;
+  width: 50%;
+  height: calc(100% - 80px);
+  background-color: #00474b;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  padding-top: 40px;
+
+  button {
+    width: 80%;
+    height: 15%;
+    border: none;
+    border-radius: 5px;
+    background: $Strong_cyan;
+    color: $Very_dark_cyan;
+    font-size: inherit;
+    margin-bottom: 20px;
+
+    @include font-family_space_mono;
+
+    &:hover {
+      background: $Light_grayish_cyan;
+      color: $Very_dark_cyan;
+      cursor: pointer;
+    }
+
+    &:disabled {
+      background: $button_disabled_bg_color;
+      pointer-events: none;
+    }
+  }
+}
+
+.flex {
+  flex: 1;
+}
+
+
+@media screen and (max-width: 400px) {
+  .results {
+    width: calc(100% - 20px);
+    margin: 40px 10px;
+
+    button {
+      padding: 10px;
+      margin-top: 40px;
+    }
+  }
+}
