@@ -1,0 +1,26 @@
+@import "src/styles/variables";
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: #677677;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  &__error {
+    color: $input_error_color;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 1rem;
+
+    &__error {
+      color: $input_error_color;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "src/styles/variables";
+
+.button {
+  border: none;
+  border-radius: 5px;
+  background: $Very_dark_cyan;
+  color: $Very_light_grayish_cyan;
+  font-size: inherit;
+
+  @include font-family_space_mono;
+
+  &:hover {
+    background: $button_hover_bg;
+    color: $Very_dark_cyan;
+    cursor: pointer;
+  }
+
+  &--active {
+    background-color: $button_active_color;
+    color: $Very_dark_cyan;
+  }
+}

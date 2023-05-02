@@ -1,0 +1,31 @@
+@import "src/styles/variables";
+
+input {
+  color: $Very_dark_cyan;
+  background: $input_background_color;
+  font-size: inherit;
+  border: none;
+  text-align: center;
+  width: 95%;
+  border-radius: 5px;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &::placeholder {
+    color: inherit;
+    opacity: 1;
+    font-weight: 600;
+  }
+
+  &:active {
+    outline: 2px solid $button_hover_bg;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $button_hover_bg;
+  }
+}

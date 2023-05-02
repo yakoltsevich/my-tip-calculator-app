@@ -1,0 +1,69 @@
+@import "src/styles/variables";
+
+.results-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25px;
+  color: $Strong_cyan;
+
+  &__left-part {
+    width: 30%;
+  }
+
+  &__label {
+    white-space: nowrap;
+  }
+
+  &__sub-label {
+    color: $sub_text_color;
+    font-size: 1rem;
+    padding-top: 10px;
+  }
+
+  &__number {
+    text-align: right;
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .results-row {
+    padding: 15px;
+
+    &__label {
+      font-size: 0.8rem;
+    }
+
+    &__sub-label {
+      font-size: 0.6rem;
+      padding-top: 10px;
+    }
+
+    &__number {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1920px) {
+  .results-row {
+    &__label {
+      font-size: 1rem;
+    }
+
+    &__sub-label {
+      font-size: 0.75rem;
+      padding-top: 10px;
+    }
+
+    &__number {
+      font-size: 2rem;
+    }
+  }
+}

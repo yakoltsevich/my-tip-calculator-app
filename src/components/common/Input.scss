@@ -1,0 +1,62 @@
+@import "src/styles/variables";
+
+.input {
+  width: 100%;
+  color: $Very_dark_cyan;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    background-color: $input_background_color;
+    border-radius: 5px;
+    padding: 10px 15px 10px 35px;
+    font-size: inherit;
+
+    & > svg {
+      width: 10%;
+      transform: scale(1.5);
+    }
+
+    &:focus-within {
+      outline: 2px solid $button_hover_bg;
+    }
+
+    &--error:focus-within {
+      outline: 2px solid $input_error_color;
+    }
+
+    &--error {
+      outline: 2px solid $input_error_color;
+    }
+
+    input {
+      width: 100%;
+      padding: 5px 15px;
+      border: none;
+      text-align: right;
+      color: inherit;
+      background: none;
+      font-size: inherit;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      &:active {
+        border: none;
+      }
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .input__wrapper > svg {
+    transform: scale(1);
+  }
+}
