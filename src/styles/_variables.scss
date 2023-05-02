@@ -1,0 +1,31 @@
+$Very_dark_cyan: hsl(183, 100%, 15%);
+$Dark_grayish_cyan: hsl(186, 14%, 43%);
+$Dark_grayish_cyan: hsl(186, 14%, 43%);
+$Dark_grayish_cyan: hsl(186, 14%, 43%);
+$Grayish_cyan: hsl(184, 14%, 56%);
+$Light_grayish_cyan: hsl(185, 41%, 84%);
+$Very_light_grayish_cyan: hsl(189, 41%, 97%);
+$Very_light_grayish_cyan: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+$Strong_cyan: hsl(172, 67%, 45%);
+
+$desktop_1440_font_size: 2rem;
+$desktop_1080_font_size: 1.2rem;
+$mobile_font_size: 1rem;
+
+
+$sub_text_color: #5d9096;
+$button_hover_bg:#9fe8df;
+$button_active_color: $Strong_cyan;
+$button_hover_color: $Very_dark_cyan;
+$button_disabled_bg_color: #0d686d;
+
+$input_background_color: $Very_light_grayish_cyan;
+$input_error_color: #c89c8e;
+
+$title_text_color: $Dark_grayish_cyan;
+
+@mixin font-family_space_mono {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
