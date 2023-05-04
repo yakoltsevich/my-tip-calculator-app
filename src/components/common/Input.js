@@ -1,7 +1,7 @@
 import React, {memo} from "react";
 import './Input.scss'
 
-const MAX_NUMBER_LENGTH = 10
+const MAX_NUMBER_LENGTH = 9
 export const Input = memo(({Icon, onChange, error, value}) => {
     const onInputChange = (event) => {
         if (event.target.value.length > MAX_NUMBER_LENGTH) {

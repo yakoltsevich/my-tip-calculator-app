@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: $mobile_screen_width) {
   .App {
     width: 100%;
     height: auto;
@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 1920px) {
+@media screen and (min-width: $mobile_screen_width) and (max-width: 1920px) {
   .App {
     font-size: $desktop_1080_font_size;
 

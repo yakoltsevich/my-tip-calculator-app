@@ -55,8 +55,13 @@
   }
 }
 
-@media screen and (max-width: 400px) {
-  .input__wrapper > svg {
-    transform: scale(1);
+@media screen and (max-width: $tablet_width) {
+  .input__wrapper {
+    padding: 10px 15px;
+
+    > svg {
+      width: 20%;
+      transform: scale(1);
+    }
   }
 }

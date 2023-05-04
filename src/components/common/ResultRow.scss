@@ -3,6 +3,7 @@
 .results-row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
   padding: 25px;
@@ -18,7 +19,7 @@
 
   &__sub-label {
     color: $sub_text_color;
-    font-size: 1rem;
+    font-size: 16px;
     padding-top: 10px;
   }
 
@@ -27,43 +28,67 @@
     width: 70%;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 3rem;
+    font-size: 48px;
   }
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: $mobile_screen_width) {
   .results-row {
     padding: 15px;
 
     &__label {
-      font-size: 0.8rem;
+      font-size: 13px;
     }
 
     &__sub-label {
-      font-size: 0.6rem;
+      font-size: 10px;
       padding-top: 10px;
     }
 
     &__number {
-      font-size: 1.5rem;
+      font-size: 24px;
     }
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 1920px) {
+@media screen and (min-width: $mobile_screen_width) and (max-width: 1920px) {
   .results-row {
     &__label {
-      font-size: 1rem;
+      font-size: 16px;
     }
 
     &__sub-label {
-      font-size: 0.75rem;
+      font-size: 12px;
       padding-top: 10px;
     }
 
     &__number {
-      font-size: 2rem;
+      max-width: 250px;
+      font-size: 32px;
+    }
+  }
+}
+
+@media screen and (min-width: $mobile_screen_width) and (max-width: $tablet_width) {
+  .results-row {
+    &__left-part {
+      min-width: 75px;
+    }
+
+    &__label {
+      font-size: 12px;
+    }
+
+    &__sub-label {
+      font-size: 10px;
+      padding-top: 10px;
+    }
+
+    &__number {
+      max-width: 175px;
+      font-size: 18px;
+      width: 100%;
     }
   }
 }

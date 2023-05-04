@@ -42,7 +42,7 @@
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: $mobile_screen_width) {
   .results {
     width: calc(100% - 20px);
     margin: 40px 10px;
@@ -51,5 +51,11 @@
       padding: 10px;
       margin-top: 40px;
     }
+  }
+}
+
+@media screen and (min-width: $mobile_screen_width) and (max-width: $tablet_width){
+  .results {
+    padding-top: 20px;
   }
 }

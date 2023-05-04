@@ -1,3 +1,5 @@
+@import "src/styles/variables";
+
 .table {
   width: 60%;
   height: 50%;
@@ -10,11 +12,19 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: $mobile_screen_width) {
   .table {
     width: 100%;
     min-width: 100%;
     min-height: 100%;
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: $mobile_screen_width) and (max-width: $tablet_width) {
+  .table {
+    width: 100%;
+    min-width: 100%;
+    min-height: 350px;
   }
 }
