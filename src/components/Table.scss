@@ -1,6 +1,8 @@
 .table {
   width: 60%;
   height: 50%;
+  min-height: 450px;
+  min-width: 770px;
   background: white;
   border-radius: 15px;
   display: flex;
@@ -11,6 +13,7 @@
 @media screen and (max-width: 400px) {
   .table {
     width: 100%;
+    min-width: 100%;
     min-height: 100%;
     flex-direction: column;
   }

@@ -8,7 +8,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   box-sizing: content-box;
   background: $Light_grayish_cyan;
 
@@ -17,7 +16,7 @@
 
   & > svg {
     transform: scale(2);
-    margin: 5% 0;
+    margin-bottom: 5vh;
   }
 }
 
@@ -31,7 +30,6 @@
 
     & > svg {
       transform: scale(1);
-      margin: 5% 0;
     }
   }
 }
@@ -39,5 +37,9 @@
 @media screen and (min-width: 400px) and (max-width: 1920px) {
   .App {
     font-size: $desktop_1080_font_size;
+
+    & > svg {
+      transform: scale(1);
+    }
   }
 }

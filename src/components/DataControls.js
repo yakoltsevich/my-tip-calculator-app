@@ -38,7 +38,7 @@ export const DataControls = ({
                        onChange={(e) => setBill(e.target.value)}
                        Icon={IconDollarSvg}/>
             </div>
-            <div>
+            <div className="data-controls__buttons-container">
                 <Title text='Select tip %'/>
                 <div className="data-controls__buttons-list">
                     {LIST_OF_TIPS_PERCENTAGE.map(renderListOfTips)}
