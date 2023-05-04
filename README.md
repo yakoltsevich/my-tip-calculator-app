@@ -2,7 +2,7 @@
 
 Check deployed version https://my-tips-calculator.netlify.app/
 
-App supports mobile (iPhone 12 Pro), Full HD, Quad HD(2k) resolutions
+App supports mobile (iPhone 12 Pro), Full HD, Quad HD(2k) resolutions in Google Chrome browser
 
 ## Available Scripts
 In the project directory, you can run:
