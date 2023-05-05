@@ -1,8 +1,10 @@
 # Tip Calculator App
 
-Check deployed version https://my-tips-calculator.netlify.app/
+This is task from https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX
 
-App supports mobile (iPhone 12 Pro), Full HD, Quad HD(2k) resolutions in Google Chrome browser
+Deployed version https://my-tips-calculator.netlify.app/
+
+App implemented with responsive layout.
 
 ## Available Scripts
 In the project directory, you can run:
@@ -11,7 +13,3 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
